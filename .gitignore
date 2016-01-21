@@ -1,2 +1,105 @@
-*.project
-*.DS_store
+# Latex files
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.synctex.gz (busy)
+*.pdfsync
+*.nav
+*.snm
+*.sty
+*.tex
+#################################
+# R files not needed
+Rprofile
+Rprofile.site
+.Rhistory
+*.Rtr
+#################################
+# Image files
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.ai
+*.eps
+*.tif
+*.tiff
+*.svg
+##################################
+# Directories
+
+##################################
+# Archive files
+*.bz2
+*.7z
+*.nc
+*.zip
+*.dmg
+*.iso
+*.jar
+*.rar
+*.tar
+################################
+# Data files
+*.Rdata
+*.rda
+*.xls
+*.xlsx
+*.doc
+*.docx
+*.mat
+###################################
+# Windows files
+*.exe
+Thumbs.db
+ehthumbs.db
+.DS_Store*
+Icon?
+*.dll
+*.com
+*.class
+#################################
+# Logs and databases
+*.log
+.project
+.metadata/*
+*.ini
+.mylyn/*
+*.lock
+#################################
+# Mac IDE files
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+####################################
+# Mac finder files and hidden folders
+.DS_Store
+###################################
+# C object files
+*.o
+*.so
+.httr-oauth
