@@ -18,7 +18,7 @@
 #############################################
 # function y<-wavenumL(f,h);
 # % y<-wavenum(f,h): FUNCTION for the calculation of the wavenumber.
-# %                   The dispertion relation is solved using a 
+# %                   The dispersion relation is solved using a 
 # %                   polynomial approximation.
 # %                   f, wave frequency; f<-1/T.
 # %                   h, water depth (in m).
@@ -47,17 +47,18 @@ wavenumL <- function(f, h) {
 # %        Corr_lim = [min max] frequency for attenuation correction (Hz, 
 #                                     %    optional, default [0.05 0.33])                     
 
-# % This function corrects a detrended sea surface time series for depth attenuation.
-# % Frequency correction from 0.05 to 0.33 Hz. The programme checks the length of the 
-# % input and zero pads as necessary.  After correction, the output vector is truncated 
-# % to the same length as the input.  
+# % This function corrects a detrended sea surface time series for depth 
+# % attenuation.
+# % Frequency correction from 0.05 to 0.33 Hz. The programme checks the length 
+# % of the input and zero pads as necessary.  After correction, the output 
+# % vector is truncated to the same length as the input.  
 # %
 # %    SURFACE = PR_CORR(PT,[],Fs,Zpt,M)
 # %
-# % Alternatively, if the second argument (H) is an empty matrix, PT should be the 
-# % sea-surface above bottom time-series. In this case, each segment of PT will be 
-# % linearly detrended, corrected for attenuation, and the linear trend added back before 
-# % constructing the result SURFACE.
+# % Alternatively, if the second argument (H) is an empty matrix, PT should be 
+# % the sea-surface above bottom time-series. In this case, each segment of PT 
+# % will be linearly detrended, corrected for attenuation, and the linear trend 
+# % added back before constructing the result SURFACE.
 # %
 
 
@@ -244,7 +245,7 @@ pr_corr <- function(pt, Fs, zpt, M = 512, Corr_lim = c(0.05, 0.33) ){
 	# Place the new corrected heights back into the
 	# the positions in the original vector that had
 	# good data. 
-	H_with_NaN[not_NaN] <- H; 
+	H_with_NaN[notNA] <- H; 
 	# And rename that to be H
 	H <- H_with_NaN 
 	
