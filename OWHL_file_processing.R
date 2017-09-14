@@ -11,7 +11,7 @@ Sys.setenv(TZ = myTimeZone)
 # The test file 15032600_halfday.CSV contains data from an early prototype
 # deployed in approx 10m depth at Hopkins Marine Station in Pacific Grove CA
 # on Mar 26, 2015. The sensor sat approximately 0.5m above the true sand bottom.
-fname = "./testing_OWHL/sample_data/15032600_halfday.CSV"
+fname = "D:/Arduino/testing_OWHL/sample_data/15032600_halfday.CSV"
 
 # There is a little bit of mission info stored in the first row
 missioninfo = scan(fname, what=character(),nlines = 1, sep = ',')
